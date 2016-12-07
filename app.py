@@ -12,11 +12,14 @@ def form_go():
 
 	topic = request.form['topic']
 	genre = request.form['genre']
-	country = request.form['country']
-	length = request.form['length']
+	print(genre)
+	#country = request.form['country']
+	#print(country)
+	#length = request.form['length']
+	#print(length)
 
 	#return "<html><p>" + topic + "</p></html>"
-	return "ok"
+	return topic
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
