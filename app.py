@@ -11,11 +11,11 @@ def homepage():
 def form_go():
 
 	topic = request.form['topic']
-	genre = int(request.form['genre'])
-	country = int(request.form['country'])
+	genre = request.form['genre']
+	country = request.form['country']
 	length = request.form['length']
 
-	return (topic, genre)
+	return topic
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
