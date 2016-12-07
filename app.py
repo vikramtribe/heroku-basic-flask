@@ -15,7 +15,8 @@ def form_go():
 	country = request.form['country']
 	length = request.form['length']
 
-	return "<html><p>" + topic + "</p></html>"
+	#return "<html><p>" + topic + "</p></html>"
+	return "ok"
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
