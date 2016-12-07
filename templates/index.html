@@ -1,0 +1,50 @@
+<html lang="en">
+    
+<head>
+    <!-- import Unicode and UTF-8 -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- import touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Youtube Playlist Curator</title>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"></strong>
+</head>
+    
+<body>
+    <div class="container">  
+      <form id="contact" action="" method="post">
+        <h3>Playlist Auto Curator</h3>
+        <h4>All fields are required</h4>
+        <fieldset>
+          <input placeholder="Topic" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <select name="genre" id="dropdown">
+            <option value="none" disabled selected>Genre</option>
+            <option value="comedy">Comedy</option>
+            <option value="romance">Romance</option>
+            <option value="news">News</option>
+            <option value="adventure">Adventure</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <select name="country" id="dropdown">
+            <option value="none" disabled selected>Country</option>
+            <option value="ID">Indonesia</option>
+            <option value="PH">Philippines</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <select name="length" id="dropdown">
+            <option value="none" disabled selected>Playlist Length</option>
+            <option value="5">5 Videos</option>
+            <option value="10">10 Videos</option>
+            <option value="20">20 Videos</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Generate!</button>
+        </fieldset>
+      </form>
+    </div>
+</body>
+</html>
